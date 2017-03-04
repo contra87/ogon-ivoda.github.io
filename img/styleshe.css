@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'arlekino';
+    src: url('arlekino.eot');
+    src: url('arlekino.eot@') format('embedded-opentype'),
+         url('arlekino.woff') format('woff'),
+         url('arlekino.ttf') format('truetype'),
+         url('arlekino.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'boyarsky';
+    src: url('arlekino.eot');
+    src: url('arlekino.eot@') format('embedded-opentype'),
+         url('arlekino.woff') format('woff'),
+         url('arlekino.ttf') format('truetype'),
+         url('arlekino.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body{
+    height: 100%; 
+}
+
+html{
+    background: #9A7652;;
+    
+    background: url(16.jpg);
+    color:#808080;
+    font: 11px boyarsky, tahoma, verdana, geneva, sans-serif;
+}
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 34px;
+    text-align: center;
+    color: #00008B;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+h2{
+    font-size: 22px;
+    text-align: center;
+    color: #00008B;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+#container{
+    position: relative;
+/*   background: url(/img/back.png);*/
+    /*height:100%;*/
+    width:1180px;
+    margin: 0 auto;
+    /*background: url(/img/back.png);
+    background-position: 0 296px;*/
+}
+
+
+#main{
+    min-height: 100%;
+    margin: 0 10px -30px;
+}
+
+#all{
+    padding: 10px 0 60px;
+    overflow: hidden;
+}
+#left{
+    float: left;
+    width: 280px;
+    padding: 5px 0 5px 0;
+    margin-left: 10px;
+}
+#out {
+    float: right;
+    width: 100%;
+    margin-left: -290px;
+
+}
+#right {
+    margin-left: 300px;
+    padding: 20px 0 0;
+
+}
+#pic {
+    height: 190px;
+    overflow: hidden;
+    margin: -20px 0 -28px 130px;
+}
+#border{
+    padding: 20px 0 10px 10px;
+}
+
+a img {
+    border: none;
+}
+/*Back to top button*/ 
+
+#back-top {
+    position: fixed;
+    top: 80%;
+    z-index: 999;
+    margin-left: 90%;
+}
+#back-top a {
+    width: 60px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin-bottom: 7px;
+    background: /*#ddd*/ url(web.png) no-repeat center center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#game{
+    width: 830px;
+    border: 2px solid #01437D;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 10px  0 0;
+}
+
+#game_h{
+    margin: 0 20px 20px;
+    color: darkBlue;
+    font-size: 1.6em;
+}
+#h_img{
+    border: none;
+}
+.mouse_left {
+    float: left;
+    width: 22px;
+    height: 30px;
+    background: url(mouse_left.png) no-repeat top;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    line-height: 25px;
+}
+
+.game_control {
+    line-height: 40px;
+    padding: 0 0 0 40px;
+    color: darkBlue;
+    font-size: 1.9em;
+}
+
+#game_control{
+    margin: 20px 20px;
+}
+
+.cell{
+    height: 247px;
+}
+
+
+
+#header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 00px;
+}
+#logo{
+    position: absolute;
+/*    top: 10px;*/
+    left: 0;
+    width: 1080px;
+    height: 220px;
+    text-align: center;
+    font-size: 18px;
+    font-family: myriad, arial, helvetica, sans-serif;
+}
+#logo span{
+    font-size: 36px;
+    color: #00afdd;
+}
+
+#logo a{
+    display: block;
+    width: 800px;
+    height: 360px;
+    margin: 0 auto 20px;
+    background: url(http://www.igryogonvoda.ru/img/head.png) no-repeat;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+#footer{
+    overflow: hidden;
+    position: relative;
+    height:30px;
+    margin: 0 50px;
+    line-height: 30px;
+    text-align: right;
+    color: blue;
+    font: 15px arlekino;
+}
+
+
+
+
+#adv{
+    width: 846px;
+    margin: 15px 0 0 0;
+}
+
+#adv div{
+   padding: 10px; 
+   padding-bottom: 0px; 
+   color: darkblue; 
+   text-align: justify;
+   font-size: 1.9em;
+}
+
+#menu{
+    width: 210px;
+    float: left;
+    margin: 0px 10px 0 0;
+    padding: 15px;
+    border: 2px solid #01437D;
+    border-radius: 5px;
+}
+
+.items{
+    /*background-size: 100%; */
+    height: 245px;
+    border: 2px solid #01437D;
+    border-radius: 5px;
+    padding: 0 5px 0px 5px;
+}
+
+#content{
+    float: left;
+    width: 870px;
+    margin: -290px 0 20px 0;
+}
+#contents{
+    padding: 0 0 0 20px;
+}
+
+li img{
+    margin-right: 8px;
+}
+
+li a{
+    font-family: arlekino;
+    font-size: 1.9em;
+    text-decoration: none;
+    line-height: 35px;
+    vertical-align: top;
+    color: maroon;
+}
+
+li a:hover{
+    color: #2D1B7F;
+}
+
+/*
+#footer{
+    margin: 19px 21px 10px 0;
+    color: darkred;
+    text-align: right;
+    font-size: 1em;
+    padding-top: 5px;
+    clear: both;
+}
+ */
+h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+h2 a:hover, #menu_head a:hover{
+    color: #01437D;
+}
+
+h3{
+    font-size: 18px;
+    color: #00008B;
+    text-decoration: none;
+    margin: 0px;
+    display:inline;
+}
+
+#menu_head img{
+    margin: 0 10px;
+}
+#menu_head{
+    margin: 0 0 5px 0;
+}
+
+#menu_head a{
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.item{
+    overflow: hidden;
+	padding: 3px;
+    height: 180px;
+}
+
+.item a{
+    display: block;
+    float: left;
+    text-align: left;
+    text-decoration: none;
+}
+
+.intro{
+    color: darkblue;
+    float: right;
+    width: 50%;
+    height: 165px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 17px;
+}
+#header a{
+    text-decoration: none;
+}
+
+#vk_comments{
+    color: red;
+}
+#s_logo{
+    height: 30px;
+    width: 32px;
+    margin: 0 10px;
+    float: left;
+}
+.i_head{
+    text-align: center;
+    color: #FFFAF0;
+    text-decoration: none;
+   /* font-family: 'arlekino';*/
+}
+.i_head h2{
+    margin: 0 0.1em;
+    font-family: 'arlekino';
+    color: maroon;
+    font-size: 24px;
+    letter-spacing: 5px;
+    line-height: 35px;
+}
+
+.i_head h1{
+    margin-top: 10px;
+    padding: 0px;
+/*    font-family: 'arlekino';*/
+    color: maroon;
+    font-size: 3em;
+    letter-spacing: 5px;
+/*     line-height: 35px;*/
+}
+
+
+li {
+    margin: 10px 0;
+    list-style: none;
+}
+.items, #adv, #game, #menu, #border {
+    /*background: pink url(/img/adv.jpg);*/
+    background-color: #F2F2F2;
+    border: 4px solid #E27500;
+    border-radius: 8px;
+}
+#border{
+    margin: -40px 0 0 0px;
+}
+
+#top_menu{
+    background: url(17.png) no-repeat bottom;
+    width: 290px;
+    height: 290px;
+    z-index: 999;
+    position: relative;
+    margin-right: 10px;
+} 
+
+h2 a, #menu_head a {
+    color: maroon;
+    text-decoration: none;
+    font: 24px arlekino;
+    letter-spacing: 0px;
+}
+
+h2 a:hover, #menu_head a:hover, li a:hover {
+color: yellow;
+}
+
+.c_items, .d_items{
+    float: left;
+    overflow: hidden;
+}
+.c_items{
+    width: 420px;
+    margin: 10px 10px 0 0; 
+}
+
+#game .c_items{
+    width: 195px;
+    margin: 10px 12px 0 0;
+}
+#game .c_items .items{
+    height: 240px;
+}
+#game .c_items .i_head{
+    height: 75px;
+}
+
+#raiting {position:relative; height:16px; cursor:pointer; width:83px; float:left; margin-top:0px;} /* Блок рейтинга*/
+#raiting_blank, #raiting_votes, #raiting_hover {height:16px; position:absolute; margin-top: 0px;}
+#raiting_blank { background:url(raitings.png); width:83px; } /* "Чистые" звездочки */
+#raiting_votes {background:url(raitings.png) 0 -16px} /*  Закрашенные звездочки */ 
+#raiting_hover {background:url(raitings.png) 0 -32px; display:none}  /*  звездочки при голосовании */ 
+#raiting_info {margin-left:100px; color: #000;}
+#raiting_info img{vertical-align:middle; margin:0 5px; display:none}
+#raiting_info h3 {margin-top: 0; font-size: 18px; letter-spacing: 1.5px;}
+#raiting_info h3 b{color: red; font-size: 18px; letter-spacing: 1.5px;}
+#raiting_info h3 span{color: yellow;}
+#raiting_star{
+    margin-bottom: 7px;
+    height: 16px;
+}
+
+.odd {
+font-size: 18px;
+}
