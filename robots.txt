@@ -1,6 +1,6 @@
-User-Agent: *
+﻿User-Agent: *
 Disallow:
-Host: www.igryogonvoda.ru
+Host: ogon-ivoda.cheatson.ru
 
  
 
