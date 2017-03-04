@@ -213,7 +213,7 @@ a img {
     width: 800px;
     height: 360px;
     margin: 0 auto 20px;
-    background: url(http://www.igryogonvoda.ru/img/head.png) no-repeat;
+    background: url(/img/head.png) no-repeat;
     text-indent: -1000px;
     overflow: hidden;
 }
