@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
+<<<<<<< HEAD
 RewriteEngine On
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
 RewriteRule .* http:///%1 [R=301,L]
@@ -22,3 +23,12 @@ RewriteRule (.*) /$1.html [L]
 RewriteEngine On
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
 RewriteRule .* http:///%1 [R=301,L]
+=======
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
+RewriteCond %{REQUEST_URI} ^/index$ [OR]
+RewriteCond %{REQUEST_URI} ^/index[.]+(\w+)$
+RewriteRule . / [R=301,L]
+</IfModule>
+>>>>>>> parent of 4da6677... ommit

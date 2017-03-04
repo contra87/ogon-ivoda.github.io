@@ -1,6 +1,6 @@
 ﻿User-Agent: *
 Disallow:
-Host: 
+Host: ogon-ivoda.cheatson.ru
 
  
 
