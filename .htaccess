@@ -1,5 +1,24 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ http://ogon-ivoda.cheatson.ru/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
+RewriteRule .* http://ogon-ivoda.cheatson.ru/%1 [R=301,L]
 </IfModule>
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+
+RewriteRule ^([^.]+)\.html$ http://ogon-ivoda.cheatson.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+
+RewriteCond %{REQUEST_fileNAME} !-d
+
+RewriteCond %{REQUEST_fileNAME} !-f
+
+RewriteRule (.*) /$1.html [L]
+
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
+RewriteRule .* http://ogon-ivoda.cheatson.ru/%1 [R=301,L]
