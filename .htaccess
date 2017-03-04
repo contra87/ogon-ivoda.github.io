@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
 <<<<<<< HEAD
 RewriteEngine On
+<<<<<<< HEAD
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
 RewriteRule .* http:///%1 [R=301,L]
 </IfModule>
@@ -32,3 +33,8 @@ RewriteCond %{REQUEST_URI} ^/index[.]+(\w+)$
 RewriteRule . / [R=301,L]
 </IfModule>
 >>>>>>> parent of 4da6677... ommit
+=======
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://ogon-ivoda.cheatson.ru/ [R=301,L]
+</IfModule>
+>>>>>>> parent of e9a1621... comit
