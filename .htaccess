@@ -4,4 +4,4 @@ Options +FollowSymLinks
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP
   RewriteRule ^index\.html$ http://ogon-ivoda.cheatson.ru/ [R=301,L]
   RewriteEngine On
-RewriteRule ^index.html$ / [R]
+RewriteRule ^/$ / [R]
