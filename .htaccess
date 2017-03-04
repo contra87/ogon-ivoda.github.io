@@ -1,40 +1,7 @@
-<IfModule mod_rewrite.c>
-<<<<<<< HEAD
-RewriteEngine On
-<<<<<<< HEAD
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
-RewriteRule .* http:///%1 [R=301,L]
-</IfModule>
-RewriteEngine on
-
-RewriteBase /
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
-
-RewriteRule ^([^.]+)\.html$ http:///$1 [R=301,L]
-
-RewriteCond %{REQUEST_URI} !(\.[^./]+)$
-
-RewriteCond %{REQUEST_fileNAME} !-d
-
-RewriteCond %{REQUEST_fileNAME} !-f
-
-RewriteRule (.*) /$1.html [L]
-
-RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)index/?(\.html)?\ HTTP/ 
-RewriteRule .* http:///%1 [R=301,L]
-=======
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
-RewriteCond %{REQUEST_URI} ^/index$ [OR]
-RewriteCond %{REQUEST_URI} ^/index[.]+(\w+)$
-RewriteRule . / [R=301,L]
-</IfModule>
->>>>>>> parent of 4da6677... ommit
-=======
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ http://ogon-ivoda.cheatson.ru/ [R=301,L]
-</IfModule>
->>>>>>> parent of e9a1621... comit
+Options +FollowSymLinks
+  RewriteEngine On
+  RewriteRule ^(([^/]+/)*[^.]+)$ /$1.html [L]
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP
+  RewriteRule ^index\.html$ http://ogon-ivoda.cheatson.ru/ [R=301,L]
+  RewriteEngine On
+RewriteRule ^index.html$ / [R]
